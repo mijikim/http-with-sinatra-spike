@@ -1,0 +1,8 @@
+<a href='/items/new'>To new page</a>
+<br>
+<ul>
+  <% @filtered_items.each_with_index do |item, index| %>
+    <li><a href="/items/<%= index %>"><%= item %></a></li>
+  <% end%>
+</ul>
+<a href='/'>Back to main page</a>
